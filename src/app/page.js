@@ -1,10 +1,17 @@
 import Main from "@/components/Main";
-import Navbar from "@/components/Navbar";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 sm:p-24">
       <Main />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </main>
   )
 }

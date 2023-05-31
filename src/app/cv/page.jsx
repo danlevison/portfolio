@@ -1,0 +1,139 @@
+import React from 'react'
+import {GrDocumentDownload} from "react-icons/gr"
+
+const page = () => {
+  return (
+    <main className="w-full p-24 flex justify-center items-center">
+        <div className="max-w-[1240px] grid lg:grid-cols-3 mx-auto py-8">
+            <a className="absolute top-24 right-8 flex items-center gap-1" href="/" download >
+                <GrDocumentDownload size={20} />
+                Download
+            </a>
+            <div className="bg-[#f4f4f4]  rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl col-span-3 lg:col-span-1">
+                <div className="py-16 px-8 lg:py-[13.25em]">
+                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Details</h3>
+                    <div className="py-4">
+                        <h4 className="uppercase text-sm">Address</h4>
+                        <p className="py-2">London</p>
+                        <p>United Kingdom</p>
+                    </div>
+                    <div className="py-4">
+                        <h4 className="uppercase text-sm">Phone</h4>
+                        <p className="py-2">07764877216</p>
+                    </div>
+                    <div className="py-4">
+                        <h4 className="uppercase text-sm">Email</h4>
+                        <p className="py-2">dan.ejlevison@gmail.com</p>
+                    </div>
+                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Links</h3>
+                    <div className="flex flex-col py-2">
+                        <a className="underline py-2" href="https://www.linkedin.com/in/daniel-levison-7250b9156/" target="_blank">LinkedIn</a>
+                        <a className="underline py-2" href="https://github.com/danlevison" target="_blank">GitHub</a>
+                        <a className="underline py-2" href="/" >Portfolio</a>
+                    </div>
+                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Skills</h3>
+                    <div className="py-2">
+                        <ul className="flex flex-col">
+                            <li className="py-2 cursor-default">HTML</li>
+                            <li className="py-2 cursor-default">CSS</li>
+                            <li className="py-2 cursor-default">JavaScript</li>
+                            <li className="py-2 cursor-default">React</li>
+                            <li className="py-2 cursor-default">Next.js</li>
+                            <li className="py-2 cursor-default">Tailwind</li>
+                            <li className="py-2 cursor-default">Figma</li>
+                            <li className="py-2 cursor-default">GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-white col-span-2 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl px-16 py-8">
+                <div className="border-2 border-black py-6 px-12 text-center">
+                    <h1 className="text-sm lg:text-2xl uppercase tracking-wider">Daniel Levison</h1>
+                    <p className="uppercase pt-6 text-sm lg:text-xl">Junior front end developer</p>
+                </div>
+                <div>
+                    <div className="pt-11 pb-4">
+                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Profile</h3>
+                        <p className="leading-8 py-2">
+                            With over 7 years of experience in primary education, I am a motivated professional seeking a new challenge in the field of Front-End Development. I have developed transferable skills such as communication, organisation, problem-solving, and continuous learning throughout my teaching career.
+                        </p>
+                        <p className="leading-8 py-4">
+                            My interest in Front-End Development stems from my passion for technology and I am excited by the prospect of working in a fast-paced and constantly evolving industry. I am eager to contribute to the development of innovative and user-friendly applications and websites whilst continuing to learn and refine my own abilities.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="pb-2 uppercase tracking-[.2em] border-b border-black">Web dev experience</h3>
+                        <p className="leading-8 py-2">
+                            Student Space is a web app that I built during my time as a primary school teacher. I created Student Space as a personal project to provide a one-stop platform for managing rewards for my class and organising tools for daily classroom management.
+                        </p>
+                    </div>
+                    <div className="py-4">
+                        <h3 className="pb-2 uppercase tracking-[.2em] border-b border-black">Employment history</h3>
+                            <div>
+                                <div className="flex flex-col md:flex-row md:justify-between py-2">
+                                    <h2 className="text-sm">Associate Teacher/TA at St. John Fisher Catholic Primary School</h2>
+                                    <p className="text-gray-600">London</p>
+                                </div>
+                                <p className="text-gray-600 text-sm">Jan 2016 - Present</p>
+                                <ul className="list-disc px-6 md:px-12">
+                                    <li className="py-2 cursor-default">Organised a class of 30 students daily</li>
+                                    <li className="py-1 cursor-default">Planned and prepared engaging and interactive lessons and learning materials</li>
+                                    <li className="py-1 cursor-default">Taught lessons and delivered the curriculum to various classes</li>
+                                    <li className="py-1 cursor-default">Assessed student progress and communicated the feedback to students and parents</li>
+                                    <li className="py-1 cursor-default">Maintained accurate records and data of student progress and provided regular updates to senior management </li>
+                                    <li className="py-1 cursor-default">Communicated and collaborated with colleagues to develop and implement school policies and procedures</li>
+                                </ul>
+                            </div>
+
+                            <div className="pt-4">
+                                <div className="flex flex-col md:flex-row md:justify-between py-2">
+                                    <h2 className="text-sm">Client relations, Future Start Independent Financial Planning</h2>
+                                    <p className="text-gray-600">London</p>
+                                </div>
+                                <p className="text-gray-600 text-sm">Jul 2019 - Sep 2019</p>
+                                <ul className="list-disc px-6 md:px-12">
+                                    <li className="py-2 cursor-default">Communicated regularly with clients to understand their needs and goals, and to provide updates on their portfolios and financial plans</li>
+                                    <li className="py-1 cursor-default">Managed client records and maintained accurate and up-to-date information in the company&apos;s databases</li>
+                                    <li className="py-1 cursor-default">Communicated with new potential clients and created a database to store client details</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div className="py-4">
+                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Education</h3>
+                        <div>
+                            <div className="flex flex-col md:flex-row md:justify-between py-2">
+                                <h2 className="text-sm">BA (Hons) Accounting & Economics, University of Hertfordshire</h2>
+                                <p className="text-gray-600">Hertfordshire</p>
+                            </div>
+                            <p className="text-gray-600 text-sm">Sep 2016 - May 2019</p>
+                            <p className="py-4">Graduated with First-Class Honours</p>
+                        </div>
+                        <div className="py-4">
+                            <div className="flex flex-col md:flex-row md:justify-between py-2">
+                                <h2 className="text-sm">Qualified Teacher Status (QTS), e-Qualitas</h2>
+                                <p className="text-gray-600">London</p>
+                            </div>
+                            <p className="text-gray-600 text-sm">Apr 2021 - Apr 2022</p>
+                        </div>
+                        <div className="py-4">
+                            <div className="flex flex-col md:flex-row md:justify-between py-2">
+                                <h2 className="text-sm">St. Joan of Arc Catholic School</h2>
+                                <p className="text-gray-600">Hertfordshire</p>
+                            </div>
+                            <p className="text-gray-600 text-sm">Apr 2021 - Apr 2022</p>
+                            <li className="py-2 px-4 list-disc cursor-default">A Levels: Biology (B), Economics (C), Chemistry (D)</li>
+                        </div>
+                    </div>
+                    <div className="pb-12">
+                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">References</h3>
+                        <h4 className="py-2">References available upon request</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  )
+}
+
+export default page
