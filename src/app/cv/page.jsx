@@ -5,13 +5,13 @@ const page = () => {
   return (
     <main className="w-full p-24 flex justify-center items-center">
         <div className="max-w-[1240px] grid lg:grid-cols-3 mx-auto py-8">
-            <a className="absolute top-24 right-8 flex items-center gap-1" href="/" download >
+            <a className="absolute top-24 right-8 flex items-center gap-1" href="/" download="Daniel Levison CV">
                 <GrDocumentDownload size={20} />
                 Download
             </a>
-            <div className="bg-[#f4f4f4]  rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl col-span-3 lg:col-span-1">
+            <div className="bg-[#f4f4f4] dark:bg-gray-700 dark:text-gray-400 rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl col-span-3 lg:col-span-1">
                 <div className="py-16 px-8 lg:py-[13.25em]">
-                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Details</h3>
+                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black dark:border-light">Details</h3>
                     <div className="py-4">
                         <h4 className="uppercase text-sm">Address</h4>
                         <p className="py-2">London</p>
@@ -23,15 +23,15 @@ const page = () => {
                     </div>
                     <div className="py-4">
                         <h4 className="uppercase text-sm">Email</h4>
-                        <p className="py-2">dan.ejlevison@gmail.com</p>
+                        <a href={"mailto:dan.ejlevison@gmail.com"} className="py-2 underline">dan.ejlevison@gmail.com</a>
                     </div>
-                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Links</h3>
+                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black dark:border-light">Links</h3>
                     <div className="flex flex-col py-2">
                         <a className="underline py-2" href="https://www.linkedin.com/in/daniel-levison-7250b9156/" target="_blank">LinkedIn</a>
                         <a className="underline py-2" href="https://github.com/danlevison" target="_blank">GitHub</a>
                         <a className="underline py-2" href="/" >Portfolio</a>
                     </div>
-                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Skills</h3>
+                    <h3 className="py-2 uppercase tracking-[.2em] border-b border-black dark:border-light">Skills</h3>
                     <div className="py-2">
                         <ul className="flex flex-col">
                             <li className="py-2 cursor-default">HTML</li>
@@ -47,14 +47,14 @@ const page = () => {
                 </div>
             </div>
 
-            <div className="bg-white col-span-2 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl px-16 py-8">
-                <div className="border-2 border-black py-6 px-12 text-center">
+            <div className="bg-white dark:bg-gray-900 dark:text-gray-400 col-span-2 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl px-16 py-8">
+                <div className="border-2 border-black dark:border-light py-6 px-12 text-center">
                     <h1 className="text-sm lg:text-2xl uppercase tracking-wider">Daniel Levison</h1>
                     <p className="uppercase pt-6 text-sm lg:text-xl">Junior front end developer</p>
                 </div>
                 <div>
                     <div className="pt-11 pb-4">
-                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Profile</h3>
+                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black dark:border-light">Profile</h3>
                         <p className="leading-8 py-2">
                             With over 7 years of experience in primary education, I am a motivated professional seeking a new challenge in the field of Front-End Development. I have developed transferable skills such as communication, organisation, problem-solving, and continuous learning throughout my teaching career.
                         </p>
@@ -63,13 +63,13 @@ const page = () => {
                         </p>
                     </div>
                     <div>
-                        <h3 className="pb-2 uppercase tracking-[.2em] border-b border-black">Web dev experience</h3>
+                        <h3 className="pb-2 uppercase tracking-[.2em] border-b border-black dark:border-light">Web dev experience</h3>
                         <p className="leading-8 py-2">
                             Student Space is a web app that I built during my time as a primary school teacher. I created Student Space as a personal project to provide a one-stop platform for managing rewards for my class and organising tools for daily classroom management.
                         </p>
                     </div>
                     <div className="py-4">
-                        <h3 className="pb-2 uppercase tracking-[.2em] border-b border-black">Employment history</h3>
+                        <h3 className="pb-2 uppercase tracking-[.2em] border-b border-black dark:border-light">Employment history</h3>
                             <div>
                                 <div className="flex flex-col md:flex-row md:justify-between py-2">
                                     <h2 className="text-sm">Associate Teacher/TA at St. John Fisher Catholic Primary School</h2>
@@ -100,7 +100,7 @@ const page = () => {
                             </div>
                     </div>
                     <div className="py-4">
-                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">Education</h3>
+                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black dark:border-light">Education</h3>
                         <div>
                             <div className="flex flex-col md:flex-row md:justify-between py-2">
                                 <h2 className="text-sm">BA (Hons) Accounting & Economics, University of Hertfordshire</h2>
@@ -126,7 +126,7 @@ const page = () => {
                         </div>
                     </div>
                     <div className="pb-12">
-                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black">References</h3>
+                        <h3 className="py-2 uppercase tracking-[.2em] border-b border-black dark:border-light">References</h3>
                         <h4 className="py-2">References available upon request</h4>
                     </div>
                 </div>

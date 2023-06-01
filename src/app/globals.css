@@ -9,7 +9,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-light text-dark tracking-wide
+    @apply bg-light text-dark dark:bg-dark dark:text-light tracking-wide 
   }
 
 
@@ -30,6 +30,7 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-primary to-[#B17693] text-white
+    @apply shadow-xl shadow-gray-400 dark:shadow-black rounded-xl uppercase bg-gradient-to-r from-primary to-[#B17693] dark:from-primaryDark dark:to-[#A6BDB6] text-white
   }
+ 
 }
