@@ -59,7 +59,7 @@ const Navbar = () => {
               <NavLink href={"/#projects"} title={"Projects"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
               <NavLink href={"/#contact"} title={"Contact"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
           </ul>
-          <div onClick={handleNav} className="md:hidden cursor-pointer ml-2">
+          <div onClick={handleNav} className="md:hidden cursor-pointer ml-4">
             <AiOutlineMenu size={25} />
           </div>
         </div>

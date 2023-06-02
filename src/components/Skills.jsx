@@ -1,45 +1,53 @@
 import React from 'react'
 import Image from "next/image"
+import htmlImg from "../../public/assets/skills/html.png"
+import cssImg from "../../public/assets/skills/css.png"
+import javascriptImg from "../../public/assets/skills/javascript.png"
+import reactImg from "../../public/assets/skills/react.png"
+import nextjsImg from "../../public/assets/skills/nextjs.png"
+import tailwindImg from "../../public/assets/skills/tailwind.png"
+import figmaImg from "../../public/assets/skills/figma.png"
+import githubImg from "../../public/assets/skills/github.png"
 
 const Skills = () => {
     const skillsImgArr = [
         {
-            src: "/../public/assets/skills/html.png",
+            src: htmlImg,
             alt: "/",
             name: "HTML"
         },
         {
-            src: "/../public/assets/skills/css.png",
+            src: cssImg,
             alt: "/",
             name: "CSS"
         },
         {
-            src: "/../public/assets/skills/javascript.png",
+            src: javascriptImg,
             alt: "/",
             name: "JavaScript"
         },
         {
-            src: "/../public/assets/skills/react.png",
+            src: reactImg,
             alt: "/",
             name: "React"
         },
         {
-            src: "/../public/assets/skills/nextjs.png",
+            src: nextjsImg,
             alt: "/",
             name: "Next.js"
         },
         {
-            src: "/../public/assets/skills/tailwind.png",
+            src: tailwindImg,
             alt: "/",
             name: "Tailwind"
         },
         {
-            src: "/../public/assets/skills/figma.png",
+            src: figmaImg,
             alt: "/",
             name: "Figma"
         },
         {
-            src: "/../public/assets/skills/github.png",
+            src: githubImg,
             alt: "/",
             name: "GitHub"
         },
