@@ -46,7 +46,7 @@ const Skills = () => {
     ]
 
     const skillsEl = skillsImgArr.map((image, index) => (
-        <div key={index} className="p-6 shadow-lg dark:shadow-black rounded-xl hover:scale-105 ease-in duration-300">
+        <div key={index} className="p-6 shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex items-center">
                 <div className="flex justify-evenly items-center w-full">
                     <Image src={image.src} alt={image.alt} width="64" height="64" />
@@ -59,8 +59,8 @@ const Skills = () => {
   return (
     <section id="skills" className="w-full lg:h-screen p-2">
         <div className="max-w-[1240px] h-full mx-auto flex flex-col justify-center items-center">
-            <p className="text-xl tracking-widest uppercase text-primary dark:text-primaryDark">Skills</p>
-            <h2 className="py-4 capitalize text-center">What I&apos;ve worked with</h2>
+            <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark">Skills</p>
+            <h2 className="py-4 capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">What I&apos;ve worked with</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full mt-4">
                 {skillsEl}
             </div>

@@ -1,9 +1,7 @@
-"use client"
-
 import './globals.css'
 import { Montserrat } from 'next/font/google'
-import { ThemeProvider } from "next-themes"
 import Navbar from "@/components/Navbar"
+import Providers from "./themeProvider"
 
 const montserrat = Montserrat({ 
   subsets: ["latin"], 
@@ -17,12 +15,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.variable} font-mont`}>
-        <ThemeProvider attribute="class">
+        <Providers>
           <Navbar /> 
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )

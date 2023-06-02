@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Logo = () => {
   return (
-    <div href={"/"} className="flex items-center cursor-pointer gap-2 transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark">
+    <div href={"/"} className="flex items-center cursor-pointer gap-2 transition-colors duration-300 hover:text-accent dark:hover:text-accentDark">
         <Link href={"/"}
         className="flex justify-center items-center gap-3">
             <div className="flex flex-col justify-center items-center w-12 h-12 bg-dark text-light dark:bg-light dark:text-dark rounded-full text-2xl font-bold">DL</div>

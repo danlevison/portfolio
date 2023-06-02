@@ -53,11 +53,11 @@ const Navbar = () => {
           :<button className="bg-none bg-light text-dark p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsMoonStars size={18} /></button>}
         <div>
           <ul className="hidden md:flex font-bold uppercase">
-              <NavLink href={"/"} title={"Home"} className="ml-12 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-              <NavLink href={"/#about"} title={"About"} className="ml-12 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-              <NavLink href={"/#skills"} title={"Skills"} className="ml-12 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-              <NavLink href={"/#projects"} title={"Projects"} className="ml-12 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-              <NavLink href={"/#contact"} title={"Contact"} className="ml-12 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
+              <NavLink href={"/"} title={"Home"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+              <NavLink href={"/#about"} title={"About"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+              <NavLink href={"/#skills"} title={"Skills"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+              <NavLink href={"/#projects"} title={"Projects"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+              <NavLink href={"/#contact"} title={"Contact"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer ml-2">
             <AiOutlineMenu size={25} />
@@ -84,15 +84,15 @@ const Navbar = () => {
         </div>
         <div className="py-4">
           <ul className="flex flex-col font-bold uppercase">
-            <NavLink href={"/"} title={"Home"} className="py-5 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-            <NavLink href={"/#about"} title={"About"} className="py-5 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-            <NavLink href={"/#skills"} title={"Skills"} className="py-5 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-            <NavLink href={"/#projects"} title={"Projects"} className="py-5 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
-            <NavLink href={"/#contact"} title={"Contact"} className="py-5 text-sm transition-colors duration-300 hover:text-primary dark:hover:text-primaryDark" />
+            <NavLink href={"/"} title={"Home"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+            <NavLink href={"/#about"} title={"About"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+            <NavLink href={"/#skills"} title={"Skills"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+            <NavLink href={"/#projects"} title={"Projects"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+            <NavLink href={"/#contact"} title={"Contact"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
           </ul>
 
           <div className="pt-40">
-            <p className="text-sm sm:text-base uppercase tracking-widest text-primary dark:text-primaryDark">Connect with me</p>
+            <p className="text-sm sm:text-base uppercase tracking-widest text-accent dark:text-accentDark">Connect with me</p>
             <div className="flex justify-evenly sm:justify-between items-center my-4 w-full sm:w-[80%]">
               <a href={"https://www.linkedin.com/in/daniel-levison-7250b9156/"} target="_blank" className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
