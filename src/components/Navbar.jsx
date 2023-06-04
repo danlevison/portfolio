@@ -13,18 +13,24 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
- 
-  // Because we cannot know the theme on the server, many of the values returned from useTheme will be undefined until mounted on the client. This means if you try to render UI based on the current theme before mounting on the client, you will see a hydration mismatch error.
+
   useEffect(() => {
     setMounted(true)
-  }, [])
+    // set theme based on user theme settings
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (isDark) {
+      setTheme("dark")
+    } else {
+      setTheme("light")
+    }
+  }, [setTheme])
 
   if (!mounted) {
     return null
   }
 
   const handleTheme = () => {
-    if(theme === "light") {
+    if (theme === "light") {
       setTheme("dark")
     } else {
       setTheme("light")

@@ -31,7 +31,7 @@ const page = () => {
                     </div>
                     <div className="py-4">
                         <h4 className="uppercase text-sm">Phone</h4>
-                        <p className="py-2">00000000000</p>
+                        <p className="py-2">07764877216</p>
                     </div>
                     <div className="py-4">
                         <h4 className="uppercase text-sm">Email</h4>
@@ -62,7 +62,7 @@ const page = () => {
             <div className="bg-white dark:bg-gray-900 text-primaryText dark:text-primaryTextDark col-span-2 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl px-10 py-8">
                 <div className="border-2 border-black dark:border-light py-6 px-12 text-center">
                     <h1 className="text-sm lg:text-2xl text-primaryHeading dark:text-primaryHeadingDark uppercase tracking-wider">Daniel Levison</h1>
-                    <p className="uppercase pt-6 text-sm lg:text-xl text-primaryText dark:text-primaryTextDark">Junior front end developer</p>
+                    <p className="uppercase pt-6 text-sm lg:text-xl text-primaryText dark:text-primaryTextDark">Front end developer</p>
                 </div>
                 <div>
                     <div className="pt-11 pb-4">

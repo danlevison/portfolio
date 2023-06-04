@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 import {AiOutlineMail} from "react-icons/ai"
 import {FaLinkedinIn, FaGithub} from "react-icons/fa"
 import { RiPagesLine } from "react-icons/ri"
@@ -27,9 +28,9 @@ const Main = () => {
                     <a href={"mailto:dan.ejlevison@gmail.com"} className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <AiOutlineMail />
                     </a>
-                    <a href={"/cv"} className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <Link href={"/cv"} className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <RiPagesLine />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
