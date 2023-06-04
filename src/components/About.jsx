@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from "next/image"
-import Link from "next/link"
+// import { Link } from "react-scroll"
+
 
 const About = () => {
   return (
@@ -15,7 +15,10 @@ const About = () => {
                 <p className="py-2 text-primaryText dark:text-primaryTextDark">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa nam expedita culpa soluta maiores officia voluptas, aspernatur iusto. Id officia enim a fuga dolor cum, repellendus facere sequi porro.
                 </p>
-                <Link href={"/#projects"} className="py-2 text-primaryText dark:text-primaryTextDark text-bold underline cursor-pointer">Check out some of my latest projects</Link>
+                {/* <Link to="projects" spy={true} smooth={true} offset={-100} duration={500}
+                className="py-2 text-primaryText dark:text-primaryTextDark text-bold underline cursor-pointer">
+                    Check out some of my latest projects 
+                </Link> */}
             </div>
         </div>
     </section>

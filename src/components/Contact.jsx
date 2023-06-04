@@ -2,11 +2,9 @@
 
 import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
-import Link from "next/link"
-import Lottie from "lottie-react"
 import { BsCheckCircle } from "react-icons/bs"
 import { AiOutlineClose } from "react-icons/ai"
-import animationData from "../../public/assets/squat-animation.json"
+import ScrollToTop from "./ScrollToTop"
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false)
@@ -40,17 +38,17 @@ const Contact = () => {
               <div className="w-full py-2">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Name</label>
-                  <input className="border-2 rounded-lg p-3 border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="text" name="from_name" required/>
+                  <input className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="text" name="from_name" required/>
                 </div>
                   
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
-                  <input className="border-2 rounded-lg p-3 border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="email" name="from_email" required />
+                  <input className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="email" name="from_email" required />
                 </div>
 
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
-                  <textarea className="border-2 rounded-lg p-3 border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" rows={10} name="message" required></textarea>
+                  <textarea className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" rows={10} name="message" required></textarea>
                 </div>
 
                 <button className="w-full p-4 mt-4 md:flex md:w-auto md:ml-auto text-gray-100 hover:scale-105 ease-in duration-300">Send Message</button>
@@ -72,16 +70,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        )}
-
-        <div className="flex justify-center pt-16">
-          <Link href={"/"}>
-            <div className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-2 cursor-pointer hover:scale-110 ease-in duration-300">
-              <Lottie className="w-16" animationData={animationData} />
-            </div>
-          </Link>
-        </div>
-        </div>
+          )}
+          <ScrollToTop />
+      </div>
     </section>
   )
 }

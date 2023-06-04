@@ -1,16 +1,26 @@
 import React from 'react'
+import Link from "next/link"
 import {GrDocumentDownload} from "react-icons/gr"
+import ScrollToTop from "@/components/ScrollToTop"
 
 const page = () => {
   return (
-    <main className="w-full p-24 flex justify-center items-center">
+    <main className="w-full px-12 py-40 flex flex-col justify-center items-center">
         <div className="max-w-[1240px] grid lg:grid-cols-3 mx-auto py-8">
-            <a className= "absolute top-24 right-8 flex items-center gap-1" href="/" download="Daniel Levison CV">
-                <div className="bg-[#fff] dark:bg-light p-2 mr-1 rounded-full">
-                    <GrDocumentDownload size={20} />
-                </div>
-                Download
-            </a>
+            <div className="absolute top-24 right-10 flex flex-col items-center gap-3">
+                <Link 
+                    href={"/"} 
+                    className="text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-light text-sm sm:text-md px-3 py-2 hover:scale-105 duration-300">
+                    Go Back
+                </Link>
+                <a className= "flex items-center gap-1 hover:scale-105 duration-300" href="/" download="Daniel Levison CV">
+                    <div className="bg-[#fff] dark:bg-light p-2 mr-1 rounded-full">
+                        <GrDocumentDownload size={20} />
+                    </div>
+                    Download
+                </a>
+            </div>
+
             <div className="bg-[#f4f4f4] dark:bg-gray-700 text-primaryText dark:text-primaryTextDark rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl col-span-3 lg:col-span-1">
                 <div className="py-16 px-8 lg:py-[13.25em]">
                     <h3 className="py-2 uppercase tracking-[.2em] text-primaryHeading dark:text-primaryHeadingDark border-b border-black dark:border-light">Details</h3>
@@ -21,7 +31,7 @@ const page = () => {
                     </div>
                     <div className="py-4">
                         <h4 className="uppercase text-sm">Phone</h4>
-                        <p className="py-2">07764877216</p>
+                        <p className="py-2">00000000000</p>
                     </div>
                     <div className="py-4">
                         <h4 className="uppercase text-sm">Email</h4>
@@ -49,7 +59,7 @@ const page = () => {
                 </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 text-primaryText dark:text-primaryTextDark col-span-2 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl px-16 py-8">
+            <div className="bg-white dark:bg-gray-900 text-primaryText dark:text-primaryTextDark col-span-2 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl px-10 py-8">
                 <div className="border-2 border-black dark:border-light py-6 px-12 text-center">
                     <h1 className="text-sm lg:text-2xl text-primaryHeading dark:text-primaryHeadingDark uppercase tracking-wider">Daniel Levison</h1>
                     <p className="uppercase pt-6 text-sm lg:text-xl text-primaryText dark:text-primaryTextDark">Junior front end developer</p>
@@ -134,6 +144,7 @@ const page = () => {
                 </div>
             </div>
         </div>
+        <ScrollToTop />
     </main>
   )
 }

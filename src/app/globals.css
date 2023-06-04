@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 @layer base {
   body {
     @apply bg-light text-dark dark:bg-dark dark:text-light tracking-wide 
   }
-
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold

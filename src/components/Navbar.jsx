@@ -49,15 +49,15 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Logo />
         {theme === "light" ? 
-          <button className="bg-none bg-gray-600 text-yellow-300 p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsSun size={18} /></button>
-          :<button className="bg-none bg-light text-dark p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsMoonStars size={18} /></button>}
+          <button className="bg-none bg-dark text-yellow-300 p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsSun size={17} /></button>
+          :<button className="bg-none bg-light text-dark p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsMoonStars size={17} /></button>}
         <div>
           <ul className="hidden md:flex font-bold uppercase">
-              <NavLink href={"/"} title={"Home"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-              <NavLink href={"/#about"} title={"About"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-              <NavLink href={"/#skills"} title={"Skills"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-              <NavLink href={"/#projects"} title={"Projects"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-              <NavLink href={"/#contact"} title={"Contact"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+              <NavLink href={"/"} title={"Home"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#about"} title={"About"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#skills"} title={"Skills"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#projects"} title={"Projects"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#contact"} title={"Contact"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer ml-4">
             <AiOutlineMenu size={25} />
@@ -84,11 +84,11 @@ const Navbar = () => {
         </div>
         <div className="py-4">
           <ul className="flex flex-col font-bold uppercase">
-            <NavLink href={"/"} title={"Home"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-            <NavLink href={"/#about"} title={"About"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-            <NavLink href={"/#skills"} title={"Skills"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-            <NavLink href={"/#projects"} title={"Projects"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
-            <NavLink href={"/#contact"} title={"Contact"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark" />
+            <NavLink href={"/"} title={"Home"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"#about"} title={"About"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"#skills"} title={"Skills"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"#projects"} title={"Projects"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"#contact"} title={"Contact"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
           </ul>
 
           <div className="pt-40">

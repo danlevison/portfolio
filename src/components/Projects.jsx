@@ -10,7 +10,7 @@ const Projects = () => {
             <h2 className="py-4 capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">What i&apos;ve built</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <ProjectItem title="Student Space" tech="JavaScript" backgroundImg={studentSpaceImg} projectUrl="/studentSpace" />
-              <ProjectItem title="Student Space" tech="JavaScript" backgroundImg={studentSpaceImg} projectUrl="/studentSpace" />
+              <ProjectItem title="Coming Soon" tech="" backgroundImg={studentSpaceImg} projectUrl="/studentSpace" />
             </div>
         </div>
     </section>

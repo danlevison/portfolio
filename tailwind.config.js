@@ -20,7 +20,7 @@ module.exports = {
         accentDark: "#36c197", // 54,193,151
         primaryShadow: "#6B7280", // 107,114,128);
         primaryShadowDark: "#000",
-      }
+      },
     },
   },
   plugins: [],
