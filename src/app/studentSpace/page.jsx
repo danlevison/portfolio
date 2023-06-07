@@ -6,11 +6,12 @@ import studentSpaceImg from "../../../public/assets/projects/student-space-proje
 
 const page = () => {
   return (
-    <main className="w-full p-12 sm:p-24">
+    <main className="w-full py-28 px-12">
         <div className="max-w-[1240px] flex flex-col justify-center items-center mx-auto p-4 pt-8">
             <div className="flex flex-col justify-center items-center">
                 <div className="md:h-[50vh] w-full flex flex-col items-center justify-center">
-                    <p className="uppercase text-xl tracking-widest text-accent dark:text-accentDark py-6">Project</p>
+                    <p className="uppercase text-xl tracking-widest text-accent dark:text-accentDark">Project</p>
+                    <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>
                     <h1 className="uppercase tracking-wider text-primaryHeading dark:text-primaryHeadingDark py-6 text-3xl sm:text-6xl text-center">Student Space</h1>
                     <a href={"https://student-space.netlify.app/"} target="_blank" className=" shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-12 py-4 mt-6 hover:scale-105 duration-300"> 
                     Live Link
@@ -74,7 +75,7 @@ const page = () => {
                         <a href={"https://github.com/danlevison/student-space"} target="_blank" className="text-center shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-lg px-6 py-4 hover:scale-105 duration-300"> 
                         View Code
                         </a>
-                        <Link href={"/#projects"} className="text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-light text-sm sm:text-lg px-6 py-4 hover:scale-105 duration-300">Go Back</Link>
+                        <Link href={"/#projects"} className="text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-primaryLight text-sm sm:text-lg px-6 py-4 hover:scale-105 duration-300">Go Back</Link>
                     </div>
                 </div>
             </div>

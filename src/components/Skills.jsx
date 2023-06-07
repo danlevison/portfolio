@@ -65,9 +65,10 @@ const Skills = () => {
     ))
 
   return (
-    <section id="skills" className="w-full lg:h-screen p-2">
-        <div className="max-w-[1240px] h-full mx-auto flex flex-col justify-center items-center">
+    <section id="skills" className="w-full lg:h-screen p-2 bg-secondaryLight dark:bg-secondaryDark">
+        <div className="max-w-[1240px] h-full mx-auto flex flex-col justify-center items-center px-12 py-16">
             <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark">Skills</p>
+            <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>
             <h2 className="py-4 lg:text-5xl capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">What I&apos;ve worked with</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full mt-4">
                 {skillsEl}

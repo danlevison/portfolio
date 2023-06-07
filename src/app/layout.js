@@ -1,6 +1,7 @@
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 import Providers from "./themeProvider"
 
 const montserrat = Montserrat({ 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

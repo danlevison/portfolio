@@ -7,14 +7,14 @@ const page = () => {
   return (
     <main className="w-full px-12 py-40 flex flex-col justify-center items-center">
         <div className="max-w-[1240px] grid lg:grid-cols-3 mx-auto py-8">
-            <div className="absolute top-24 right-10 flex flex-col items-center gap-3">
+            <div className="absolute top-[6.3rem] right-10 flex flex-col items-center gap-3">
                 <Link 
                     href={"/"} 
-                    className="text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-light text-sm sm:text-md px-3 py-2 hover:scale-105 duration-300">
+                    className="text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-primaryLight text-sm sm:text-md px-3 py-2 hover:scale-105 duration-300">
                     Go Back
                 </Link>
                 <a className= "flex items-center gap-1 hover:scale-105 duration-300" href="/" download="Daniel Levison CV">
-                    <div className="bg-[#fff] dark:bg-light p-2 mr-1 rounded-full">
+                    <div className="bg-[#fff] dark:bg-primaryLight p-2 mr-1 rounded-full">
                         <GrDocumentDownload size={20} />
                     </div>
                     Download

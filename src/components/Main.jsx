@@ -6,15 +6,14 @@ import { RiPagesLine } from "react-icons/ri"
 import MouseScroll from "./MouseScroll"
 
 const Main = () => {
+
   return (
-    <section id="home" className="w-full h-screen text-center">
+    <section id="home" className="w-full h-screen text-center bg-[url('../../public/assets/portfolio-bg-light.svg')] dark:bg-[url('../../public/assets/portfolio-bg-dark.svg')]">
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
             <div>
                 <p className="uppercase text-sm tracking-widest text-primaryText dark:text-primaryTextDark">Lorem ipsum dolor sit amet consectetur.</p>
-                <h1 className="py-4 text-gray-700 dark:text-light uppercase">
-                    Hi, I&apos;m <span className="text-accent dark:text-accentDark">Dan</span>
-                </h1>
-                <h1 className="py-1 sm:py-2 text-primaryHeading uppercase dark:text-primaryHeadingDark">A front-end developer</h1>
+                <h1 className="md:text-7xl lg:text-9xl py-4 text-gray-700 dark:text-primaryLight uppercase">Dan Levison</h1>
+                <h2 className="py-1 sm:py-2 text-primaryHeading uppercase dark:text-primaryHeadingDark">front-end developer.</h2>
                 <p className="py-4 text-primaryText dark:text-primaryTextDark max-w-[70%] m-auto">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi distinctio cupiditate ut provident nemo perspiciatis debitis? Aperiam, quo cupiditate! Alias quo voluptatibus cumque, assumenda nam perspiciatis quam eveniet quaerat adipisci.
                 </p>

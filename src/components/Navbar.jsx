@@ -50,13 +50,12 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed w-full h-20 shadow-xl bg-slate-50 dark:bg-[#263345] z-[100]">
-
+    <nav className="fixed w-full h-[5.8rem] shadow-xl bg-slate-50 dark:bg-[#263345] z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Logo />
         {theme === "light" ? 
           <button className="bg-none bg-dark text-yellow-300 p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsSun size={17} /></button>
-          :<button className="bg-none bg-light text-dark p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsMoonStars size={17} /></button>}
+          :<button className="bg-none bg-primaryLight text-dark p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsMoonStars size={17} /></button>}
         <div>
           <ul className="hidden md:flex font-bold uppercase">
               <NavLink href={"/"} title={"Home"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
@@ -74,7 +73,7 @@ const Navbar = () => {
       <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
         <div className={
           nav 
-            ? "fixed left-0 top-0 w-[100%] text-center sm:text-left sm:w-[60%] h-screen bg-light dark:bg-dark p-7 ease-in duration-500" 
+            ? "fixed left-0 top-0 w-[100%] text-center sm:text-left sm:w-[60%] h-screen bg-primaryLight dark:bg-dark p-7 ease-in duration-500" 
             : "fixed left-[-100%] top-0 p-10 ease-in duration-500 h-screen"}>
         <div>
           <div className="flex justify-between items-center w-full">

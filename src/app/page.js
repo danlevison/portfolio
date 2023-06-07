@@ -6,7 +6,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-      <main className="min-h-screen flex flex-col items-center justify-between px-12 py-32 xs:py-24 sm:p-24">
+      <main className="min-h-screen flex flex-col items-center justify-between py-16 sm:py-24">
         <Main />
         <About />
         <Skills />
