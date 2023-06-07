@@ -65,7 +65,7 @@ const Skills = () => {
     ))
 
   return (
-    <section id="skills" className="w-full lg:h-screen p-2 py-12 md:py-0">
+    <section id="skills" className="w-full lg:h-screen p-2">
         <div className="max-w-[1240px] h-full mx-auto flex flex-col justify-center items-center">
             <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark">Skills</p>
             <h2 className="py-4 lg:text-5xl capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">What I&apos;ve worked with</h2>
