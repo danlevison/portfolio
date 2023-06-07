@@ -11,7 +11,7 @@ const MouseScroll = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <div className="flex justify-center pt-16">
+    <div className="hidden md:flex justify-center pt-16">
       {theme === "light" ? 
         <Link href="#about">
             <Lottie className="w-14" animationData={animationData} />
