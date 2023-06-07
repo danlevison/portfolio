@@ -27,10 +27,10 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="w-full lg:h-screen py-16">
-      <div className="max-w-[800px] m-auto px-2 py-16 w-full">
+    <section id="contact" className="w-full lg:h-screen py-12 md:py-16">
+      <div className="max-w-[800px] m-auto px-2 md:py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark text-center">Contact</p>
-        <h2 className="py-4 capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">Get in touch</h2>
+        <h2 className="py-4 lg:text-5xl capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">Get in touch</h2>
 
         <div className="w-full h-auto shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl lg:p-4">
           <div className="p-4">

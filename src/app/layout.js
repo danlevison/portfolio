@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.variable} font-mont`}>
         <Providers>
-          <Navbar /> 
+          <Navbar />
           {children}
         </Providers>
       </body>

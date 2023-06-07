@@ -9,7 +9,7 @@ const page = () => {
     <main className="w-full p-12 sm:p-24">
         <div className="max-w-[1240px] flex flex-col justify-center items-center mx-auto p-4 pt-8">
             <div className="flex flex-col justify-center items-center">
-                <div className="h-[50vh] w-full flex flex-col items-center justify-center">
+                <div className="md:h-[50vh] w-full flex flex-col items-center justify-center">
                     <p className="uppercase text-xl tracking-widest text-accent dark:text-accentDark py-6">Project</p>
                     <h1 className="uppercase tracking-wider text-primaryHeading dark:text-primaryHeadingDark py-6 text-3xl sm:text-6xl text-center">Student Space</h1>
                     <a href={"https://student-space.netlify.app/"} target="_blank" className=" shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-12 py-4 mt-6 hover:scale-105 duration-300"> 
