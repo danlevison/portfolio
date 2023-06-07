@@ -7,7 +7,7 @@ import MouseScroll from "./MouseScroll"
 
 const Main = () => {
   return (
-    <section id="home" className="w-full h-screen text-center py-12 md:py-0">
+    <section id="home" className="w-full h-[130vh] xs:h-screen text-center py-12">
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
             <div>
                 <p className="uppercase text-sm tracking-widest text-primaryText dark:text-primaryTextDark">Lorem ipsum dolor sit amet consectetur.</p>
