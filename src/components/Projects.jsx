@@ -4,7 +4,7 @@ import studentSpaceImg from "../../public/assets/projects/student-space-project.
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full lg:h-screen bg-primaryLight dark:bg-dark">
+    <section id="projects" className="w-full py-16 lg:py-52 bg-primaryLight dark:bg-dark">
         <div className="max-w-[1240px] h-full mx-auto px-12 py-16 flex flex-col justify-center items-center">
             <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark">Projects</p>
             <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>

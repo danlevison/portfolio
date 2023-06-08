@@ -27,7 +27,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="w-full lg:h-screen bg-secondaryLight dark:bg-secondaryDark">
+    <section id="contact" className="w-full py-16 lg:pt-38 bg-secondaryLight dark:bg-secondaryDark">
       <div className="max-w-[800px] m-auto w-full flex flex-col items-center px-12 py-16">
         <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark text-center">Contact</p>
         <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>

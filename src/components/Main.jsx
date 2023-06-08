@@ -8,10 +8,9 @@ import MouseScroll from "./MouseScroll"
 const Main = () => {
 
   return (
-    <section id="home" className="w-full h-screen text-center bg-[url('../../public/assets/portfolio-bg-light.svg')] dark:bg-[url('../../public/assets/portfolio-bg-dark.svg')]">
+    <section id="home" className="flex flex-col justify-center items-center w-full py-16 lg:pt-52 text-center bg-[url('../../public/assets/portfolio-bg-light.svg')] dark:bg-[url('../../public/assets/portfolio-bg-dark.svg')]">
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
             <div>
-                <p className="uppercase text-sm tracking-widest text-primaryText dark:text-primaryTextDark">Lorem ipsum dolor sit amet consectetur.</p>
                 <h1 className="md:text-7xl lg:text-9xl py-4 text-gray-700 dark:text-primaryLight uppercase">Dan Levison</h1>
                 <h2 className="py-1 sm:py-2 text-primaryHeading uppercase dark:text-primaryHeadingDark">front-end developer.</h2>
                 <p className="py-4 text-primaryText dark:text-primaryTextDark max-w-[70%] m-auto">
