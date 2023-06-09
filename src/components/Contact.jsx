@@ -4,7 +4,6 @@ import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import { BsCheckCircle } from "react-icons/bs"
 import { AiOutlineClose } from "react-icons/ai"
-import ScrollToTop from "./ScrollToTop"
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false)
@@ -72,7 +71,6 @@ const Contact = () => {
             </div>
           </div>
           )}
-          <ScrollToTop />
       </div>
     </section>
   )

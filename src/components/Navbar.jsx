@@ -50,24 +50,24 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed w-full h-[5.8rem] shadow-xl bg-slate-50 dark:bg-[#263345] z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+    <nav className="fixed w-full h-[6rem] shadow-xl bg-slate-50 dark:bg-[#263345] z-[100]">
+      <div className="flex justify-between items-center gap-4 w-full h-full px-2 2xl:px-16">
         <Logo />
-        {theme === "light" ? 
-          <button className="bg-none bg-dark text-yellow-300 p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsSun size={17} /></button>
-          :<button className="bg-none bg-primaryLight text-dark p-3 rounded-full hover:scale-105 duration-300 ml-auto" onClick={handleTheme}><BsMoonStars size={17} /></button>}
-        <div>
-          <ul className="hidden md:flex font-bold uppercase">
-              <NavLink href={"/"} title={"Home"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#about"} title={"About"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#skills"} title={"Skills"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#projects"} title={"Projects"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#contact"} title={"Contact"} className="ml-12 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+        <div className="order-1 md:order-none mr-0 xl:mr-24">
+          <ul className="hidden md:flex font-bold uppercase gap-12 lg:gap-32">
+              <NavLink href={"/"} title={"Home"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#about"} title={"About"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#skills"} title={"Skills"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#projects"} title={"Projects"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"#contact"} title={"Contact"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer ml-4">
             <AiOutlineMenu size={25} />
           </div>
         </div>
+        {theme === "light" ? 
+          <button className="bg-none bg-dark text-yellow-300 p-3 rounded-full hover:scale-105 duration-300" onClick={handleTheme}><BsSun size={17} /></button>
+          :<button className="bg-none bg-primaryLight text-dark p-3 rounded-full hover:scale-105 duration-300" onClick={handleTheme}><BsMoonStars size={17} /></button>}
       </div>
 
       <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>

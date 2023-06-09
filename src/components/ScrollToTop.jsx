@@ -3,19 +3,22 @@
 import React from 'react'
 import Link from "next/link"
 import Lottie from "lottie-react"
-import animationData from "../../public/assets/squat-animation.json"
-import { BiArrowFromBottom } from "react-icons/bi"
+import animationDataLight from "../../public/assets/scroll-to-top-light.json"
+import animationDataDark from "../../public/assets/scroll-to-top-dark.json"
 import { usePathname } from "next/navigation"
+import { useTheme } from "next-themes"
 
 const ScrollToTop = () => {
   const pathName = usePathname()
+  const { theme, setTheme } = useTheme()
 
   return (
     <div className="flex justify-center pt-16">
         <Link href={pathName === "/" ? "/" : "/cv"} >
-            <div className=" flex flex-col justify-center items-center rounded-xl shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-1 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BiArrowFromBottom size={24} className="text-accent dark:text-accentDark"/>
-                <Lottie className="w-14" animationData={animationData} />
+            <div className=" flex flex-col justify-center items-center rounded-xl shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark cursor-pointer hover:scale-110 ease-in duration-300">
+                {theme === "light" ? 
+                  <Lottie className="w-16" animationData={animationDataLight} />
+                : <Lottie className="w-16" animationData={animationDataDark} /> }
             </div>
         </Link>
     </div>
