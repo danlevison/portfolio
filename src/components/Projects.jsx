@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectItem from "./ProjectItem"
 import studentSpaceImg from "../../public/assets/projects/student-space-project.png"
+import periodPlasterWorkImg from "../../public/assets/projects/period-plasterwork-project.png"
 
 const Projects = () => {
   return (
@@ -11,7 +12,7 @@ const Projects = () => {
             <h2 className="py-4 lg:text-5xl capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">What i&apos;ve built</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <ProjectItem title="Student Space" tech="JavaScript" backgroundImg={studentSpaceImg} projectUrl="/studentSpace" />
-              <ProjectItem title="Coming Soon" tech="" backgroundImg={studentSpaceImg} projectUrl="/studentSpace" />
+              <ProjectItem title="Period Plasterwork" tech="Astro/React" backgroundImg={periodPlasterWorkImg} projectUrl="/periodPlasterwork" />
             </div>
         </div>
     </section>

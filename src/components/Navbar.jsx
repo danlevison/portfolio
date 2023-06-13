@@ -2,41 +2,15 @@
 
 import React, {useState, useEffect} from 'react'
 import Link from "next/link"
-import { useTheme } from "next-themes"
 import {AiOutlineMenu, AiOutlineClose, AiOutlineMail} from "react-icons/ai"
 import {FaLinkedinIn, FaGithub} from "react-icons/fa"
 import { RiPagesLine } from "react-icons/ri"
-import { BsSun, BsMoonStars } from "react-icons/bs"
 import Logo from "./Logo"
+import ThemeToggle from "./ThemeToggle"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-
-  useEffect(() => {
-    setMounted(true)
-    // set theme based on user theme settings
-    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    if (isDark) {
-      setTheme("dark")
-    } else {
-      setTheme("light")
-    }
-  }, [setTheme])
-
-  if (!mounted) {
-    return null
-  }
-
-  const handleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark")
-    } else {
-      setTheme("light")
-    }
-  }
-
+ 
   const handleNav = () => {
     setNav(!nav)
   }
@@ -65,9 +39,7 @@ const Navbar = () => {
             <AiOutlineMenu size={25} />
           </div>
         </div>
-        {theme === "light" ? 
-          <button className="bg-none bg-dark text-yellow-300 p-3 rounded-full hover:scale-105 duration-300" onClick={handleTheme}><BsSun size={17} /></button>
-          :<button className="bg-none bg-primaryLight text-dark p-3 rounded-full hover:scale-105 duration-300" onClick={handleTheme}><BsMoonStars size={17} /></button>}
+        <ThemeToggle />
       </div>
 
       <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
