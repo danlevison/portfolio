@@ -30,10 +30,10 @@ const Navbar = () => {
         <div className="order-1 md:order-none mr-0 xl:mr-24">
           <ul className="hidden md:flex font-bold uppercase gap-12 lg:gap-32">
               <NavLink href={"/"} title={"Home"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#about"} title={"About"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#skills"} title={"Skills"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#projects"} title={"Projects"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-              <NavLink href={"#contact"} title={"Contact"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"/#about"} title={"About"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"/#skills"} title={"Skills"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"/#projects"} title={"Projects"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+              <NavLink href={"/#contact"} title={"Contact"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer ml-4">
             <AiOutlineMenu size={25} />
@@ -49,7 +49,7 @@ const Navbar = () => {
             : "fixed left-[-100%] top-0 p-10 ease-in duration-500 h-screen"}>
         <div>
           <div className="flex justify-between items-center w-full">
-            <Logo />
+            <Logo closeNav={() => setNav(false)} />
             <div onClick={handleNav} className="cursor-pointer hover:scale-110 ease-in duration-300">
               <AiOutlineClose size={25} />
             </div>
@@ -62,10 +62,10 @@ const Navbar = () => {
         <div className="py-4">
           <ul className="flex flex-col font-bold uppercase">
             <NavLink href={"/"} title={"Home"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-            <NavLink href={"#about"} title={"About"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-            <NavLink href={"#skills"} title={"Skills"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-            <NavLink href={"#projects"} title={"Projects"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
-            <NavLink href={"#contact"} title={"Contact"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"/#about"} title={"About"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"/#skills"} title={"Skills"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"/#projects"} title={"Projects"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
+            <NavLink href={"/#contact"} title={"Contact"} className="py-5 text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
           </ul>
 
           <div className="pt-40">
