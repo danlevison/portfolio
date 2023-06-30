@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col py-2">
-                  <label for="message" className="uppercase text-sm py-2">Message</label>
+                  <label htmlFor="message" className="uppercase text-sm py-2">Message</label>
                   <textarea className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" id="message" rows={10} name="message" required aria-required={true}></textarea>
                 </div>
 
