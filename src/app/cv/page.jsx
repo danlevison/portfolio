@@ -3,7 +3,7 @@ import Link from "next/link"
 import {GrDocumentDownload} from "react-icons/gr"
 import ScrollToTop from "@/components/ScrollToTop"
 
-const page = () => {
+const cv = () => {
   return (
     <main className="w-full px-12 py-40 flex flex-col justify-center items-center">
         <div className="max-w-[1240px] grid lg:grid-cols-3 mx-auto py-8">
@@ -149,4 +149,4 @@ const page = () => {
   )
 }
 
-export default page
+export default cv

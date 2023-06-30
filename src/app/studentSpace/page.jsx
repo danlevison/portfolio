@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import studentSpaceImg from "../../../public/assets/projects/student-space-project.png"
 
-const page = () => {
+const StudentSpace = () => {
   return (
     <main className="w-full py-28 px-12">
         <div className="max-w-[1240px] flex flex-col justify-center items-center mx-auto p-4 pt-8">
@@ -84,4 +84,4 @@ const page = () => {
   )
 }
 
-export default page
+export default StudentSpace

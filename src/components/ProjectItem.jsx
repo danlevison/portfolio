@@ -2,10 +2,10 @@ import React from 'react'
 import Image from "next/image"
 import Link from "next/link"
 
-const ProjectItem = ({title, tech, backgroundImg, projectUrl}) => {
+const ProjectItem = ({title, tech, backgroundImg, projectUrl, alt}) => {
   return (
-    <div className="relative flex justify-center items-center h-auto w-full min-w-[250px] shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl p-4 group hover:bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6]">
-        <Image className="rounded-xl group-hover:opacity-10" src={backgroundImg} alt={"/"} />
+    <div tabIndex={0} className="relative flex justify-center items-center h-auto w-full min-w-[250px] shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl p-4 group hover:bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6]">
+        <Image className="rounded-xl group-hover:opacity-10" src={backgroundImg} alt={alt} />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <h3 className="text-lg lg:text-2xl text-white tracking-wider text-center">{title}</h3>
             <p className="pb-1 sm:pb-4 pt-1 text-white text-center text-sm sm:text-base">{tech}</p>

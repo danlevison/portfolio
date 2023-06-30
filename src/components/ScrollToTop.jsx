@@ -14,7 +14,7 @@ const ScrollToTop = () => {
 
   return (
     <div className="flex justify-center pt-16">
-        <Link href={pathName === "/" ? "/" : "/cv"} >
+        <Link href={pathName === "/" ? "/" : "/cv"} aria-label="Scroll to top.">
             <div className=" flex flex-col justify-center items-center rounded-xl shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark cursor-pointer hover:scale-110 ease-in duration-300">
                 {theme === "light" ? 
                   <Lottie className="w-16" animationData={animationDataLight} />

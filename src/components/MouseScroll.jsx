@@ -13,11 +13,11 @@ const MouseScroll = () => {
   return (
     <div className="hidden md:flex justify-center pt-16">
       {theme === "light" ? 
-        <Link href="#about">
+        <Link href="#about" aria-label="Scroll to about section.">
             <Lottie className="w-14" animationData={animationData} />
         </Link>
 
-        :<Link href="#about">
+        :<Link href="#about" aria-label="Scroll to about section.">           
             <Lottie className="w-14" animationData={animationDataDark} />
         </Link> }
     </div>
