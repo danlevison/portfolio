@@ -11,7 +11,7 @@ const About = () => {
                 <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>
                 <h2 className="py-4 lg:text-5xl capitalize text-primaryHeading dark:text-primaryHeadingDark text-center">Get to know me</h2>
                 <p className="py-4 text-primaryText dark:text-primaryTextDark leading-8">
-                I am a <span className="text-accent dark:text-accentDark font-bold capitalize">front-end developer</span> with a unique background in primary school teaching. After several fulfilling years in education, I decided to pursue my love for technology and design by transitioning into the world of web development. This career shift has allowed me to combine my creativity, problem-solving skills, and dedication to creating meaningful user experiences. <Link href="#projects" className="py-4 text-accent dark:text-accentDark text-bold underline cursor-pointer">
+                I am a <span className="text-accent dark:text-accentDark font-bold capitalize">front-end developer</span> with a unique background in primary school teaching. After several fulfilling years in education, I decided to pursue my love for technology and design by transitioning into the world of web development. This career shift has allowed me to combine my creativity, problem-solving skills, and dedication to creating meaningful user experiences. <Link href="#projects" className="py-4 text-accent dark:text-accentDark font-bold underline cursor-pointer">
                     Check out some of my latest projects 
                 </Link>
                 </p>

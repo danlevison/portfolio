@@ -20,7 +20,7 @@ module.exports = {
           secondaryLight: "#fafafa",
           primaryText: "#4B5563", //75,85,99
           primaryHeading: "#374151", //55,65,81
-          accent: "#B63E96", // 240,86,199
+          accent: "#b63e8e", // 182,62,142
           primaryShadow: "#6B7280", // 107,114,128);
 
           dark: "#1f2937",
