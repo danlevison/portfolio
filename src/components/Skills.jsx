@@ -65,7 +65,7 @@ const Skills = () => {
     ))
 
   return (
-    <section id="skills" className="w-full py-16 lg:py-52 bg-secondaryLight dark:bg-secondaryDark">
+    <section id="skills" className="w-full min-h-screen flex items-center bg-secondaryLight dark:bg-secondaryDark">
         <div className="max-w-[1240px] h-full mx-auto flex flex-col justify-center items-center px-12 py-16">
             <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark">Skills</p>
             <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>

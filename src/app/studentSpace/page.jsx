@@ -14,7 +14,8 @@ const StudentSpace = () => {
                     <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>
                     <h1 className="uppercase tracking-wider text-primaryHeading dark:text-primaryHeadingDark py-6 text-3xl sm:text-6xl text-center">Student Space</h1>
                     <a href={"https://student-space.netlify.app/"} target="_blank" className=" shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-12 py-4 mt-6 hover:scale-105 duration-300"> 
-                    Live Link
+                        Live Link
+                        <span className="sr-only">Opens in a new tab</span>
                     </a>
                 </div>
 
@@ -70,10 +71,12 @@ const StudentSpace = () => {
                 <h3 className="text-2xl text-primaryHeading dark:text-primaryHeadingDark mb-6">See Live</h3>
                     <div className="flex flex-col sm:flex-row gap-6">
                         <a href={"https://student-space.netlify.app/"} target="_blank" className="text-center shadow-xl shadow-gray-400  dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-6 py-4 hover:scale-105 duration-300"> 
-                        Live Link
+                            Live Link
+                            <span className="sr-only">Opens in a new tab</span>
                         </a>
                         <a href={"https://github.com/danlevison/student-space"} target="_blank" className="text-center shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-lg px-6 py-4 hover:scale-105 duration-300"> 
-                        View Code
+                            View Code
+                            <span className="sr-only">Opens in a new tab</span>
                         </a>
                         <Link href={"/#projects"} className="text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-primaryLight text-sm sm:text-lg px-6 py-4 hover:scale-105 duration-300">Go Back</Link>
                     </div>

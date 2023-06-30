@@ -13,8 +13,9 @@ const PeriodPlasterwork = () => {
                     <p className="uppercase text-xl tracking-widest text-accent dark:text-accentDark">Project</p>
                     <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>
                     <h1 className="uppercase tracking-wider text-primaryHeading dark:text-primaryHeadingDark py-6 text-3xl sm:text-6xl text-center">Period Plasterwork</h1>
-                    <a href={"/"} target="_blank" className=" shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-12 py-4 mt-6 hover:scale-105 duration-300"> 
-                    Live Link
+                    <a href={"https://period-plasterwork.vercel.app/"} target="_blank" className="shadow-xl shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-12 py-4 mt-6 hover:scale-105 duration-300"> 
+                        Live Link
+                        <span className="sr-only">Opens in a new tab</span>
                     </a>
                 </div>
 
@@ -41,7 +42,7 @@ const PeriodPlasterwork = () => {
                         <div className="p-2">
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center">
                                 <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center gap-2">
-                                    <RiRadioButtonFill />Astro
+                                    <RiRadioButtonFill />Next.js
                                 </p>
                                 <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center gap-2">
                                     <RiRadioButtonFill />React
@@ -59,7 +60,7 @@ const PeriodPlasterwork = () => {
                                     <RiRadioButtonFill />GitHub
                                 </p>
                                 <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center gap-2">
-                                    <RiRadioButtonFill />Netlify
+                                    <RiRadioButtonFill />Vercel
                                 </p>
                             </div>
                         </div>
@@ -69,11 +70,13 @@ const PeriodPlasterwork = () => {
                 <div className="w-full py-16">
                 <h3 className="text-2xl text-primaryHeading dark:text-primaryHeadingDark mb-6">See Live</h3>
                     <div className="flex flex-col sm:flex-row gap-6">
-                        <a href={"/"} target="_blank" className="text-center shadow-xl shadow-gray-400  dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-6 py-4 hover:scale-105 duration-300"> 
-                        Live Link
+                        <a href={"https://period-plasterwork.vercel.app/"} target="_blank" className="text-center shadow-xl shadow-gray-400  dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-xl px-6 py-4 hover:scale-105 duration-300"> 
+                            Live Link
+                            <span className="sr-only">Opens in a new tab</span>
                         </a>
                         <a href={"https://github.com/danlevison/period-plasterwork"} target="_blank" className="text-center shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl uppercase bg-gradient-to-r from-accent to-[#B17693] dark:from-accentDark dark:to-[#A6BDB6] text-white text-sm sm:text-lg px-6 py-4 hover:scale-105 duration-300"> 
-                        View Code
+                            View Code
+                            <span className="sr-only">Opens in a new tab</span>
                         </a>
                         <Link href={"/#projects"} className="text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-primaryLight text-sm sm:text-lg px-6 py-4 hover:scale-105 duration-300">Go Back</Link>
                     </div>
