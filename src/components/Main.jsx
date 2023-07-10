@@ -18,19 +18,19 @@ const Main = () => {
                 </p>
             
                 <div className="flex justify-between items-center gap-2 max-w-[330px] m-auto py-6 px-2">
-                    <a href={"https://www.linkedin.com/in/daniel-levison-7250b9156/"} target="_blank" aria-label="LinkedIn" className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <a href={"https://www.linkedin.com/in/daniel-levison-7250b9156/"} title="Linkedin" target="_blank" aria-label="Linkedin" className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaLinkedinIn size={20} />
                         <span className="sr-only">Opens in a new tab</span>
                     </a>
-                    <a href={"https://github.com/danlevison"} target="_blank" aria-label="GitHub" className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <a href={"https://github.com/danlevison"} title="GitHub" target="_blank" aria-label="GitHub" className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaGithub size={20} />
                         <span className="sr-only">Opens in a new tab</span>
                     </a>
-                    <a href={"mailto:dan.ejlevison@gmail.com"} aria-label="Email" className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <a href={"mailto:dan.ejlevison@gmail.com"} title="Email" aria-label="Email" className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <AiOutlineMail size={20} />
                         <span className="sr-only">Opens in a new tab</span>
                     </a>
-                    <Link href={"/cv"} aria-label="Go to CV Page." className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <Link href={"/cv"} title="CV" aria-label="Go to CV Page." className="rounded-full shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <RiPagesLine size={20} />
                     </Link>
                 </div>

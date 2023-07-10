@@ -8,47 +8,53 @@ import nextjsImg from "../../public/assets/skills/nextjs.png"
 import tailwindImg from "../../public/assets/skills/tailwind.png"
 import figmaImg from "../../public/assets/skills/figma.png"
 import githubImg from "../../public/assets/skills/github.png"
+import firebaseImg from "../../public/assets/skills/firebase.png"
 
 const Skills = () => {
     const skillsImgArr = [
         {
             src: htmlImg,
-            alt: "/",
+            alt: "HTML",
             name: "HTML"
         },
         {
             src: cssImg,
-            alt: "/",
+            alt: "CSS",
             name: "CSS"
         },
         {
             src: javascriptImg,
-            alt: "/",
+            alt: "JavaScript",
             name: "JavaScript"
         },
         {
             src: reactImg,
-            alt: "/",
+            alt: "React",
             name: "React"
         },
         {
             src: nextjsImg,
-            alt: "/",
+            alt: "Next.js",
             name: "Next.js"
         },
         {
             src: tailwindImg,
-            alt: "/",
+            alt: "Tailwind",
             name: "Tailwind"
         },
         {
+            src: firebaseImg,
+            alt: "Firebase",
+            name: "Firebase"
+        },
+        {
             src: figmaImg,
-            alt: "/",
+            alt: "Figma",
             name: "Figma"
         },
         {
             src: githubImg,
-            alt: "/",
+            alt: "GitHub",
             name: "GitHub"
         },
     ]
@@ -56,7 +62,7 @@ const Skills = () => {
     const skillsEl = skillsImgArr.map((image, index) => (
         <div key={index} className="p-6 shadow-lg shadow-primaryShadow dark:shadow-primaryShadowDark rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex items-center">
-                <div className="flex justify-evenly items-center w-full">
+                <div className="flex justify-evenly items-center w-full gap-2">
                     <Image src={image.src} alt={image.alt} width="64" height="64" />
                     <h3>{image.name}</h3>
                 </div>
@@ -66,7 +72,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="w-full min-h-screen flex items-center bg-secondaryLight dark:bg-secondaryDark">
-        <div className="max-w-[1240px] h-full mx-auto flex flex-col justify-center items-center px-12 py-16">
+        <div className="max-w-[1240px] h-full mx-auto flex flex-col justify-center items-center px-8 py-16">
             <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark">Skills</p>
             <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>
             <h2 className="py-4 lg:text-5xl capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">What I&apos;ve worked with</h2>

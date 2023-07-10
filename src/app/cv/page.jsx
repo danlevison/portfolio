@@ -5,16 +5,16 @@ import ScrollToTop from "@/components/ScrollToTop"
 
 const cv = () => {
   return (
-    <main className="w-full px-12 py-40 flex flex-col justify-center items-center">
+    <main className="w-full px-8 py-40 flex flex-col justify-center items-center">
         <div className="max-w-[1240px]">
-            <div className="flex justify-between items-center gap-2">
-                <h1 className="uppercase tracking-wider text-primaryHeading dark:text-primaryHeadingDark text-4xl sm:text-6xl text-center">CV</h1>
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-2">
+                <h1 className="uppercase tracking-wider text-primaryHeading dark:text-primaryHeadingDark text-6xl sm:text-7xl text-center">CV</h1>
                 <Link 
                     href={"/"} 
-                    className="order-[-1] text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-primaryLight text-sm sm:text-md px-3 py-2 hover:scale-105 duration-300">
+                    className="order-[-2] sm:order-[-1] text-center uppercase shadow-xl shadow-gray-400 dark:shadow-primaryShadowDark rounded-xl bg-transparent border-accent dark:border-accentDark border-2 text-dark dark:text-primaryLight text-sm sm:text-md px-3 py-2 hover:scale-105 duration-300">
                     Go Back
                 </Link>
-                <a className= "flex items-center gap-1 hover:scale-105 duration-300" href="/" download="Daniel Levison CV">
+                <a className= "order-[-1] sm:order-1 flex items-center gap-1 hover:scale-105 duration-300" href="/" download="Daniel Levison CV">
                     <div className="bg-[#fff] dark:bg-primaryLight p-2 mr-1 rounded-full">
                         <GrDocumentDownload size={20} />
                     </div>
@@ -33,7 +33,7 @@ const cv = () => {
                         </div>
                         <div className="py-4">
                             <h4 className="uppercase text-sm">Phone</h4>
-                            <p className="py-2">07764877216</p>
+                            <p className="py-2">00000000000</p>
                         </div>
                         <div className="py-4">
                             <h4 className="uppercase text-sm">Email</h4>
@@ -60,6 +60,7 @@ const cv = () => {
                                 <li className="py-2 cursor-default">React</li>
                                 <li className="py-2 cursor-default">Next.js</li>
                                 <li className="py-2 cursor-default">Tailwind</li>
+                                <li className="py-2 cursor-default">Firebase</li>
                                 <li className="py-2 cursor-default">Figma</li>
                                 <li className="py-2 cursor-default">GitHub</li>
                             </ul>
@@ -68,7 +69,7 @@ const cv = () => {
                 </div>
 
                 <div className="bg-white dark:bg-gray-900 text-primaryText dark:text-primaryTextDark col-span-2 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl px-10 py-8">
-                    <div className="border-2 border-black dark:border-light py-6 px-12 text-center">
+                    <div className="border-2 border-black dark:border-primaryLight py-6 px-12 text-center">
                         <h2 className="text-sm lg:text-2xl text-primaryHeading dark:text-primaryHeadingDark uppercase tracking-wider">Daniel Levison</h2>
                         <p className="uppercase pt-6 text-sm lg:text-xl text-primaryText dark:text-primaryTextDark">Front end developer</p>
                     </div>

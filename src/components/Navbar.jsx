@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="fixed w-full h-[6rem] shadow-xl bg-slate-50 dark:bg-[#263345] z-[100]">
       <div className="flex justify-between items-center gap-4 w-full h-full px-6 md:px-3 2xl:px-16">
         <Logo />
-        <div className="order-1 md:order-none mr-0 xl:mr-24">
+        <div className="order-1 md:order-none mr- xl:mr-24">
           <ul className="hidden md:flex font-bold uppercase gap-12 lg:gap-32">
             <li>
               <NavLink href={"/"} title={"Home"} className="text-sm transition-colors duration-300 hover:text-accent dark:hover:text-accentDark cursor-pointer" />
@@ -91,19 +91,19 @@ const Navbar = () => {
           <div className="pt-14">
             <p className="text-sm sm:text-base uppercase tracking-widest text-accent dark:text-accentDark">Connect with me</p>
             <div className="flex justify-evenly sm:justify-between items-center my-4 w-full sm:w-[80%]">
-              <a href={"https://www.linkedin.com/in/daniel-levison-7250b9156/"} aria-label="LinkedIn" target="_blank" className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+              <a href={"https://www.linkedin.com/in/daniel-levison-7250b9156/"} title="Linkedin" aria-label="Linkedin" target="_blank" className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
                 <span className="sr-only">Opens in a new tab</span>
               </a>
-              <a href={"https://github.com/danlevison"} target="_blank" aria-label="GitHub" className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+              <a href={"https://github.com/danlevison"} title="GitHub" target="_blank" aria-label="GitHub" className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
                 <span className="sr-only">Opens in a new tab</span>
               </a>
-              <a href={"mailto:dan.ejlevison@gmail.com"} target="_blank" aria-label="Email" className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+              <a href={"mailto:dan.ejlevison@gmail.com"} title="Email" target="_blank" aria-label="Email" className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
                 <span className="sr-only">Opens in a new tab</span>
               </a>
-              <Link href={"/cv"} onClick={handleNav} aria-label="Go to CV Page." className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+              <Link href={"/cv"} onClick={handleNav} title="CV" aria-label="Go to CV Page." className="rounded-full shadow-lg shadow-gray-500 dark:shadow-black p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                 <RiPagesLine /> 
               </Link>
             </div>

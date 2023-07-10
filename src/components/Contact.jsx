@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="w-full min-h-screen flex items-center bg-secondaryLight dark:bg-secondaryDark">
-      <div className="max-w-[800px] m-auto w-full flex flex-col items-center px-12 py-16">
+      <div className="max-w-[800px] m-auto w-full flex flex-col items-center px-8 py-16">
         <p className="text-xl tracking-widest uppercase text-accent dark:text-accentDark text-center">Contact</p>
         <div className="bg-accent dark:bg-accentDark w-7 h-1 my-2"></div>
         <h2 className="py-4 lg:text-5xl capitalize text-center text-primaryHeading dark:text-primaryHeadingDark">Get in touch</h2>
@@ -38,17 +38,17 @@ const Contact = () => {
               <div className="w-full py-2">
                 <div className="flex flex-col">
                   <label htmlFor="name" className="uppercase text-sm py-2">Name</label>
-                  <input className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="text" id="name" name="from_name" required aria-required={true} />
+                  <input minLength={3} maxLength={150} className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="text" id="name" name="from_name" required aria-required={true} />
                 </div>
                   
                 <div className="flex flex-col py-2">
                   <label htmlFor="email" className="uppercase text-sm py-2">Email</label>
-                  <input className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="email" id="email" name="from_email" required aria-required={true} />
+                  <input minLength={5} maxLength={150} className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" type="email" id="email" name="from_email" required aria-required={true} />
                 </div>
 
                 <div className="flex flex-col py-2">
                   <label htmlFor="message" className="uppercase text-sm py-2">Message</label>
-                  <textarea className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" id="message" rows={10} name="message" required aria-required={true}></textarea>
+                  <textarea minLength={4} className="border-2 rounded-lg p-3 bg-white dark:bg-[#3B3B3B] border-gray-300 dark:border-gray-700 focus:outline-accent dark:focus:outline-none dark:focus:outline-accentDark" id="message" rows={10} name="message" required aria-required={true}></textarea>
                 </div>
 
                 <button className="w-full p-4 mt-4 md:flex md:w-auto md:ml-auto text-gray-100 hover:scale-105 ease-in duration-300">Send Message</button>
